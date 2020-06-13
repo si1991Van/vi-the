@@ -29,7 +29,7 @@ class TabHomeFragment: BaseFragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         var view = inflater.inflate(R.layout.fragment_home, container, false)
         lnNapTien = view.findViewById(R.id.lnNapTien)
-        lnNapTien = view.findViewById(R.id.lnPhone)
+        lnPhone = view.findViewById(R.id.lnPhone)
         lnChat = view.findViewById(R.id.lnChat)
         return view
     }

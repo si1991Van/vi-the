@@ -12,6 +12,7 @@ class LoginActivity : BaseActivity() {
 
     private lateinit var btnContinue : Button
     private lateinit var edPhone : EditText
+    private lateinit var edPass : EditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,7 +24,7 @@ class LoginActivity : BaseActivity() {
     private fun initView(){
         btnContinue = findViewById(R.id.btnContinue)
         edPhone = findViewById(R.id.edPhone)
-
+        edPass = findViewById(R.id.edPass)
         onClick()
     }
 

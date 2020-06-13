@@ -7,4 +7,21 @@
     <string name="screen_phone_card">Nạp tiền điện thoại</string>
     <string name="screen_chat">Hỗ trợ chát</string>
     <string name="screen_transfer">Chuyển khoản</string>
+    // alter dialog
+    <string name="alert_title_success">Thành công</string>
+    <string name="text_dialog_ok">Đồng ý</string>
+    <string name="text_cancel">Hủy</string>
+    <string name="alert_title_confirm">Xác nhận</string>
+    <string name="alert_title_error">Có lỗi xảy ra</string>
+    <string name="alert_title_inform">Thông báo</string>
+    <string name="text_no_internet_connection">Không có kết nối mạng, vui lòng kiểm tra kết nối mạng và thử lại</string>
+    <string name="text_cannot_connect_to_server">Không thể kết nối với máy chủ</string>
+    <string name="text_error">Có lỗi xảy ra trong quá trình xử lý.</string>
+    <string name="text_processing">Đang tải...</string>
+    <string name="text_cannot_fail_ratting">Bạn vui lòng cài đặt CHPlay cho điện thoại</string>
+    <string name="text_cannot_fail_email">Bạn vui lòng cài đặt cho điện thoại</string>
+    <string name="text_confirm_delete_image">Bạn có thực sự muốn xoá ảnh không?</string>
+    <string name="text_confirm_finish_app">Bạn có thực sự tắt ứng dụng không?</string>
+    <string name="text_no_data">Chưa có dữ liệu</string>
+    <string name="text_choose_email_client">Chọn một email client</string>
 </resources>
