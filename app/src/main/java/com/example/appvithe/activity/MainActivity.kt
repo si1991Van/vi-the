@@ -1,8 +1,9 @@
-package com.example.appvithe
+package com.example.appvithe.activity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import com.example.appvithe.BaseActivity
+import com.example.appvithe.R
 import com.example.appvithe.tab.TabHistoryFragment
 import com.example.appvithe.tab.TabHomeFragment
 import com.example.appvithe.tab.TabNewPageFragment

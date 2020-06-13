@@ -4,4 +4,7 @@
     <string name="tab_new_page">Tin tức</string>
     <string name="tab_history">Lịch sử</string>
     <string name="tab_profile">Tài khoản</string>
+    <string name="screen_phone_card">Nạp tiền điện thoại</string>
+    <string name="screen_chat">Hỗ trợ chát</string>
+    <string name="screen_transfer">Chuyển khoản</string>
 </resources>

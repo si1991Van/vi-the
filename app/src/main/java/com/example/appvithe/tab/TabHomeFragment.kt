@@ -1,5 +1,6 @@
 package com.example.appvithe.tab
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +8,9 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import com.example.appvithe.BaseFragment
 import com.example.appvithe.R
+import com.example.appvithe.activity.ChatActivity
+import com.example.appvithe.activity.NapTienActivity
+import com.example.appvithe.activity.PhoneCardActivity
 
 class TabHomeFragment: BaseFragment() {
 
@@ -34,13 +38,13 @@ class TabHomeFragment: BaseFragment() {
         super.onCreate(savedInstanceState)
 
         lnNapTien.setOnClickListener {
-
+            startActivity(Intent(context, NapTienActivity::class.java))
         }
         lnPhone.setOnClickListener {
-
+            startActivity(Intent(context, PhoneCardActivity::class.java))
         }
         lnChat.setOnClickListener {
-
+            startActivity(Intent(context, ChatActivity::class.java))
         }
     }
 
