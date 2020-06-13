@@ -11,10 +11,10 @@ import com.example.appvithe.R
 import com.example.appvithe.model.NewsPaperItemResponse
 
 
-class NewPageAdapter(var mContext: Context, private var listMyCourse: ArrayList<NewsPaperItemResponse>?, private var onClick: (NewsPaperItemResponse?) -> Unit) : RecyclerView.Adapter<NewPageAdapter.NewsPaperViewHolder>() {
+class HomeNewHotAdapter(var mContext: Context, private var listMyCourse: ArrayList<NewsPaperItemResponse>?, private var onClick: (NewsPaperItemResponse?) -> Unit) : RecyclerView.Adapter<HomeNewHotAdapter.NewsPaperViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsPaperViewHolder {
-        val view = LayoutInflater.from(mContext).inflate(R.layout.item_new_page, parent, false)
+        val view = LayoutInflater.from(mContext).inflate(R.layout.item_home_new_hot, parent, false)
         return NewsPaperViewHolder(view)
     }
 
@@ -31,15 +31,9 @@ class NewPageAdapter(var mContext: Context, private var listMyCourse: ArrayList<
 
     inner class NewsPaperViewHolder(view: View) : RecyclerView.ViewHolder(view){
         private lateinit var imgCover : ImageView
-        private lateinit var txtName: TextView
-        private lateinit var txtLocation: TextView
-        private lateinit var txtDate: TextView
         private lateinit var txtDecription: TextView
 
         fun bindData(item: NewsPaperItemResponse?){
-            txtName.text = item?.name
-            txtLocation.text = item?.location
-            txtDate.text = item?.date
             txtDecription.text = item?.decription
         }
         

@@ -6,7 +6,7 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imgCover"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -31,7 +31,7 @@
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/imgCover"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -67,7 +67,7 @@
         app:layout_constraintTop_toTopOf="@+id/txtLocation" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/txtDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
