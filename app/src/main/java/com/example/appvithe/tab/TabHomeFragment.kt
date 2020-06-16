@@ -31,12 +31,12 @@ class TabHomeFragment: BaseFragment() {
         lnNapTien = view.findViewById(R.id.lnNapTien)
         lnPhone = view.findViewById(R.id.lnPhone)
         lnChat = view.findViewById(R.id.lnChat)
+        onClick()
         return view
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
 
+    private fun onClick(){
         lnNapTien.setOnClickListener {
             startActivity(Intent(context, NapTienActivity::class.java))
         }
@@ -47,7 +47,4 @@ class TabHomeFragment: BaseFragment() {
             startActivity(Intent(context, ChatActivity::class.java))
         }
     }
-
-
-
 }

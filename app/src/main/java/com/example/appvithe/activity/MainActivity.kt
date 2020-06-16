@@ -1,6 +1,7 @@
 package com.example.appvithe.activity
 
 import android.os.Bundle
+import android.view.View
 import androidx.fragment.app.Fragment
 import com.example.appvithe.BaseActivity
 import com.example.appvithe.R
@@ -11,7 +12,6 @@ import com.example.appvithe.tab.TabProfileFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : BaseActivity() {
-
     private lateinit var navigation : BottomNavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
