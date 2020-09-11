@@ -2,42 +2,47 @@ package com.example.appvithe.activity
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
+import android.text.method.HideReturnsTransformationMethod
+import android.text.method.PasswordTransformationMethod
 import android.widget.Toast
 import com.example.appvithe.BaseActivity
 import com.example.appvithe.R
+import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : BaseActivity() {
 
-    private lateinit var btnContinue : Button
-    private lateinit var edPhone : EditText
-    private lateinit var edPass : EditText
-
+    private var isCheckedPass: Boolean = false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        initView()
-    }
-
-
-    private fun initView(){
-        btnContinue = findViewById(R.id.btnContinue)
-        edPhone = findViewById(R.id.edPhone)
-        edPass = findViewById(R.id.edPass)
         onClick()
+        img_visibility_pass.setOnClickListener {
+            showPassword()
+        }
     }
 
     private fun onClick(){
-        var phone = edPhone.text.toString().trim()
+        var phone = edt_user_name.text.toString().trim()
         if (phone.isNullOrEmpty()){
-            btnContinue.setOnClickListener {
-                var intent = Intent(this, ValidatePhoneActivity::class.java)
+            btn_login.setOnClickListener {
+                hideKeyBoard()
+                var intent = Intent(this, MainActivity::class.java)
                 intent.putExtra("PHONE", phone)
                 startActivity(intent)
             }
         }else{
             Toast.makeText(this, "Bạn chưa nhập số điện thoại", Toast.LENGTH_LONG).show()
+        }
+    }
+
+    private fun showPassword() {
+        isCheckedPass = !isCheckedPass
+        if (isCheckedPass) {
+            edt_password.transformationMethod = HideReturnsTransformationMethod.getInstance()
+            img_visibility_pass.setImageResource(R.drawable.ic_visibility_off)
+        } else {
+            edt_password.transformationMethod = PasswordTransformationMethod.getInstance()
+            img_visibility_pass.setImageResource(R.drawable.ic_visibility_on)
         }
     }
 

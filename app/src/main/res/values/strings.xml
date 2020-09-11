@@ -24,4 +24,8 @@
     <string name="text_confirm_finish_app">Bạn có thực sự tắt ứng dụng không?</string>
     <string name="text_no_data">Chưa có dữ liệu</string>
     <string name="text_choose_email_client">Chọn một email client</string>
+    <string name="ten_dang_nhap">Tên đăng nhập</string>
+    <string name="mat_khau">Mật khẩu</string>
+    <string name="dang_nhap">Đăng nhập</string>
+    <string name="name_version">Phiên bản 1.0</string>
 </resources>

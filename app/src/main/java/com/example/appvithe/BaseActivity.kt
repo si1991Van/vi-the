@@ -6,14 +6,13 @@ import android.content.Intent
 import android.content.IntentFilter
 import android.os.Bundle
 import android.os.PersistableBundle
-import android.view.View
+import android.view.inputmethod.InputMethodManager
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
-import com.example.appvithe.activity.LoginActivity
 import com.example.appvithe.utills.IntentActionKeys
 
 abstract class BaseActivity: AppCompatActivity(){
@@ -58,5 +57,13 @@ abstract class BaseActivity: AppCompatActivity(){
     }
     override fun onBackPressed() {
         super.onBackPressed()
+    }
+    open fun hideKeyBoard() {
+        val view = this.currentFocus
+        if (view != null) {
+            val imm =
+                getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            imm.hideSoftInputFromWindow(view.windowToken, 0)
+        }
     }
 }
